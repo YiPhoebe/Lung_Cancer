@@ -1,0 +1,5 @@
+model,f1,auc,test_loss,note
+resnet34,0.031,0.7462,0.5506,"epoch=3, batch=16, lr=1e-4"
+resnet50,0.0,0.6556,0.536,"epoch=3, batch=16, lr=1e-4"
+densenet121,0.4278,0.7323,0.4988,"epoch=3, batch=16, lr=1e-4"
+efficientnet_b0,0.1644,0.6792,0.5232,"epoch=3, batch=16, lr=1e-4"
