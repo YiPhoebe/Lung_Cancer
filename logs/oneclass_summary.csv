@@ -1,0 +1,19 @@
+timestamp,model,accuracy,auc,f1,sensitivity,specificity,pth_file
+2025-05-17 21:10:59,densenet121,1.0000,nan,1.0000,0.0000,0.0000,aug_densenet121_1.pth
+2025-05-17 21:11:06,densenet121,0.5700,nan,0.7261,0.5700,0.0000,best_aug_densenet121_baseline.pth
+2025-05-17 21:11:10,densenet121,1.0000,nan,1.0000,0.0000,0.0000,best_aug_densenet121_blur.pth
+2025-05-17 21:11:16,densenet121,1.0000,nan,1.0000,0.0000,0.0000,best_aug_densenet121_flip_rotate.pth
+2025-05-17 21:11:21,densenet121,1.0000,nan,1.0000,0.0000,0.0000,best_aug_densenet121_total.pth
+2025-05-17 21:11:23,resnet18,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet18_baseline.pth
+2025-05-17 21:11:24,resnet18,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet18_blur.pth
+2025-05-17 21:11:25,resnet18,0.6200,nan,0.7654,0.6200,0.0000,best_aug_resnet18_flip_rotate.pth
+2025-05-17 21:11:27,resnet18,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet18_total.pth
+2025-05-17 21:11:29,resnet34,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet34_baseline.pth
+2025-05-17 21:11:31,resnet34,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet34_blur.pth
+2025-05-17 21:11:32,resnet34,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet34_flip_rotate.pth
+2025-05-17 21:11:33,resnet34,1.0000,nan,1.0000,0.0000,0.0000,best_aug_resnet34_total.pth
+2025-05-17 21:11:34,densenet121,0.2400,nan,0.3871,0.2400,0.0000,best_model_densenet121.pth
+2025-05-17 21:11:35,resnet18,1.0000,nan,1.0000,0.0000,0.0000,best_model_resnet18.pth
+2025-05-17 21:11:36,resnet34,0.0000,nan,0.0000,0.0000,0.0000,best_model_resnet34.pth
+2025-05-17 21:11:37,resnet34,0.0000,nan,0.0000,0.0000,0.0000,best_model_resnet34_pretatin.pth
+2025-05-17 21:11:38,resnet18,0.0000,nan,0.0000,0.0000,0.0000,model_aug_resnet18.pth

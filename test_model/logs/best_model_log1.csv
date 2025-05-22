@@ -1,0 +1,2 @@
+timestamp,model,exp_tag,epoch,val_acc,test_acc,auc,precision,recall,specificity,f1,notes
+2025-05-17 00:06:43,ResNet18,aug1_flip_rot_erase,91,0.9000,0.8800,0.9331,0.9055,0.9124,0.8182,0.9089,CenResizeterCrop / RandomHorizontalFlip / RandomRotation / RandomErasing

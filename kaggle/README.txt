@@ -1,0 +1,1 @@
+NOTE: due to data set usage restrictions, the data for this competition is no longer available for download.
