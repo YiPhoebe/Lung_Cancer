@@ -14,7 +14,7 @@ def train_one_epoch(model, dataloader, optimizer, criterion, epoch, bbox_dict=No
     lambda_mga = CFG.lambda_mga_initial + (CFG.lambda_mga_final - CFG.lambda_mga_initial) * (epoch / CFG.epochs)
 
     pbar = tqdm(dataloader, desc=f"[Epoch {epoch+1}]")
-    for images, labels, masks in pbar:
+    for images, labels, masks, _, _ in pbar:
         images, labels, masks = images.to(CFG.device), labels.to(CFG.device), masks.to(CFG.device)
 
         outputs = model(images)
@@ -51,7 +51,7 @@ def validate(model, dataloader):
     total = 0
 
     with torch.no_grad():
-        for images, labels, _ in dataloader:
+        for images, labels, _, _, _ in dataloader:
             images, labels = images.to(CFG.device), labels.to(CFG.device)
             outputs = model(images)
             _, preds = outputs.max(1)

@@ -1,4 +1,4 @@
-### ✅ main_test_mga.py (MGA ⭕️ / 마스크 회전 ⭕️)
+### ✅ main_train_mga.py (MGA ⭕️ / 마스크 회전 ⭕️)
 
 import os
 import sys

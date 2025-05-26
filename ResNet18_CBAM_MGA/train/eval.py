@@ -112,6 +112,9 @@ def save_metrics_to_csv(metrics_dict, save_path="logs/test_metrics.csv"):
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     file_exists = os.path.isfile(save_path)
 
+    if "timestamp" not in metrics_dict:
+        metrics_dict["timestamp"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     with open(save_path, "a", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=metrics_dict.keys())
         if not file_exists:
