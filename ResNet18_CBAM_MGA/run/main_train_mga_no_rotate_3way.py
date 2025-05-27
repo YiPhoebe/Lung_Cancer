@@ -39,7 +39,7 @@ def main():
     os.makedirs("logs", exist_ok=True)
 
     # 🔹 데이터 로딩 및 분할
-    all_files = glob(os.path.join(CFG.data_root, "**/*.npy"), recursive=True)
+    all_files = sorted(glob(os.path.join(CFG.data_root, "**/*.npy"), recursive=True))
     train_files, val_files, test_files, train_labels, val_labels, test_labels = split_by_patient_3way(all_files, val_size=0.1, test_size=0.2, random_state=CFG.seed)
 
     bbox_dict = load_bbox_dict(CFG.bbox_csv)

@@ -40,7 +40,7 @@ def main():
     os.makedirs("logs", exist_ok=True)
 
     # 🔹 데이터 로딩 및 분할
-    all_files = glob(os.path.join(CFG.data_root, "**/*.npy"), recursive=True)
+    all_files = sorted(glob(os.path.join(CFG.data_root, "**/*.npy"), recursive=True))
     file_label_pairs = [(f, extract_label(f)) for f in all_files if extract_label(f) is not None]
     files, labels = zip(*file_label_pairs)
 
